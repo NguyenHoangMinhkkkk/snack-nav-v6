@@ -12,7 +12,12 @@ function HomeTab(props: Props) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>HomeTab</Text>
-      <Button title="Login Screen" onPress={() => {}} />
+      <Button
+        title="ScreenA"
+        onPress={() => {
+          props.navigation.navigate('profileScreen');
+        }}
+      />
       <Button
         title="AlertModal"
         onPress={() => {
